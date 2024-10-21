@@ -1,42 +1,122 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+*{
   box-sizing: border-box;
+}
+
+div{
+  border: 1px black solid;
+}
+
+button{
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input, textarea{
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+textarea{
+  height: 20px;
+}
+
+input, textarea, button{
+  display: block;
+}
+
+/* .post{
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin: 10px 0px;
+} */
+
+.new-event{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.event-page{
+  border: solid 3px black;
+  background: white;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.event-top {
+  display: flex;
+}
+
+.event-image{
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.event-top h1{
+  margin: 20px 0 10px 0;
+  padding: 0;
+}
+
+.event-top h4{
   padding: 0;
   margin: 0;
+  margin-bottom: 5px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.event-details{
+  width: 450px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.num-of-attendies {
+  width: 160px;
+  text-align: center;
+}
+
+.num-of-attendies h4{
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.num-of-attendies h1{
+  margin: 10px 0;
+  padding: 0;
+}
+
+.event-description h4{
+ margin: 5px 10px;
+ padding: 0;
+}
+
+.event-description p{
+  margin: 0 20px 10px 20px;
+}
+
+.event-join {
+  text-align: center;
+  padding: 10px
+}
+
+.event-attendies h3{
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.event-names {
+  border: solid 1px black;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  margin-bottom: 15px;
+}
+
+.event-names h5{
+  margin: 5px 10px;
+
+  padding: 0;
 }
